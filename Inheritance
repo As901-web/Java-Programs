@@ -1,0 +1,22 @@
+public class InheritanceDemo 
+{ int a=10,b=15,c;
+    void display()
+    { c=a+b;
+        System.out.println(" Addition of a+b = " +c);
+    }
+}
+    class Ashu extends InheritanceDemo
+    {
+        void show()
+        {
+            c=a-b;
+            System.out.println("substraction of a and b = " +c);
+        }
+        public static void main(String args[])
+        {
+            Ashu a = new Ashu();
+            a.display();
+            a.show();
+        }
+    }
+    
