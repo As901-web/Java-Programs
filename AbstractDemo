@@ -1,0 +1,27 @@
+public abstract class AbstractDemo 
+{
+    abstract void start();
+}
+class Car extends AbstractDemo
+{
+    void start()
+    {
+        System.out.println("car start with key");
+    }
+}
+class Scooter extends AbstractDemo
+{
+    void start()
+    {
+        System.out.println("Scooter starts with key");
+    }
+    public static void main(String args[])
+    {
+        Car c = new Car();
+       c.start();
+        Scooter s = new Scooter();
+        s.start();
+       
+    }
+}
+
