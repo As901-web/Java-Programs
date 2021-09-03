@@ -1,0 +1,23 @@
+public class ConstDemo 
+{
+   int id;
+   String name;
+   void display()
+   {
+       System.out.println(id+ " " +name);
+   }
+   ConstDemo(int id,String name)
+   {
+       this.id=id;
+       this.name=name;
+   }
+   public static void main(String args[])
+   {
+       ConstDemo d = new ConstDemo(1,"Asma");
+       ConstDemo d1 = new ConstDemo(2,"Tanveer");
+       d1.display();
+      
+       
+       
+   }
+}
