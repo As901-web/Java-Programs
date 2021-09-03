@@ -1,0 +1,37 @@
+public class CalculatorDemo
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your First no : ");
+        int n1=sc.nextInt();
+        System.out.println("Enter your second no : ");
+        int n2 = sc.nextInt();
+        System.out.println(" Select Symbol(+,-,*,/)");
+        String sym = sc.next();
+        int res;
+        switch(sym)
+        {
+            case "+" : res=n1+n2;
+            System.out.println("addition of entered numbers are : " +res);
+            break;
+            
+            case "-" : res=n1-n2;
+            System.out.println("Substraction of entered numbers are : " +res);
+            break;
+            
+            case "*" : res=n1*n2;
+            System.out.println("Multiplication of entered numbers are : " +res);
+            break;
+            
+            case "/" : res=n1/n2;
+            System.out.println("division of entered numbers are : " +res);
+            break;
+            
+            default : 
+                System.out.println("Invalid Symbol.") ;
+                    break;
+        }
+    }
+    
+}
