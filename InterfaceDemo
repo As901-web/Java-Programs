@@ -1,0 +1,25 @@
+interface I1
+{
+     void show();
+}
+interface I2
+{
+    void display();
+}
+public class IntDemo implements I1,I2
+{
+    public void show()
+    {
+        System.out.println("Here implement the interface I1");
+    }
+    public void display()
+    {
+        System.out.println("Here Implemets the interface I2");
+    }
+    public static void main(String args[])
+    {
+        IntDemo d = new IntDemo();
+        d.show();
+        d.display();
+    }
+}
