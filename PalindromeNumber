@@ -1,0 +1,25 @@
+public class PalindromNumber
+{
+    public static void main(String args[])
+    {
+        int rem,rev=0,temp, no=151;
+        temp=no;
+        while(no!=0)
+        {
+            rem=no%10;
+            rev=rev*10+rem;
+            no=no/10;
+            
+        }
+        System.out.println(" " +rev);
+        if(temp==rev)
+        {
+            System.out.println("Given number is Palindrom");
+        }
+        else
+        {
+            System.out.println("Given number is not Palindrom");
+        }
+        
+    }
+}
